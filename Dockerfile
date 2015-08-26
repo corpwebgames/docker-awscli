@@ -6,4 +6,5 @@ RUN apt-get update \
 	&& rm -rf /var/lib/apt/lists/*
 
 COPY configure.sh /
-RUN ./configure.sh
+RUN chmod +x configure.sh \
+	&& ./configure.sh
