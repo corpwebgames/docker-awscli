@@ -6,6 +6,6 @@ using
 =====
 ```
 docker build -t dpatriot/docker-awscli:latest . 
-docker run -ti --rm dpatriot/docker-aws-cli aws s3 ls
+docker run -ti --rm dpatriot/docker-awscli aws s3 ls
 ```
 
