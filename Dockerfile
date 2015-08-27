@@ -7,5 +7,5 @@ RUN apt-get update \
 
 COPY configure.sh /
 RUN mkdir -p /root/.aws \
-	&& chmod +x configure.sh \
-	&& ./configure.sh
+	&& chmod +x /configure.sh; sync \
+	&& /configure.sh
