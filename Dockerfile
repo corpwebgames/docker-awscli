@@ -5,7 +5,6 @@ RUN apt-get update \
 	&& pip install awscli \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY configure.sh /
+COPY configure.sh /etc/profile.d/
 RUN mkdir -p /root/.aws \
-	&& chmod +x /configure.sh; sync \
-	&& /configure.sh
+	&& chmod +x /etc/profile.d/configure.sh
